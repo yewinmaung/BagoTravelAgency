@@ -63,7 +63,7 @@
               <div class="container">
                   <div class="row justify-content-center">
                       <div class="col-md-6">
-                          <div class="card">
+                          <div class="card" style="width: 450px;">
                               <h3 class="card-header text-center">Create Travel Package</h3>
                               <div class="card-body">
                                   @if (session('success'))

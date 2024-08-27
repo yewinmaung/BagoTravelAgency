@@ -68,7 +68,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card" style="width: 460px;">
                         <h3 class="card-header text-center">Hotels List</h3>
                         <div class="card-body">
                          <table class="table table-hover">
@@ -79,7 +79,7 @@
                                  <th>R-T</th>
                                  <th>Price</th>
 
-                             <th>Action</th>
+                             <th colspan="2">Action</th>
                              </thead>
                              <tbody>
                              @foreach($towns as $town)
@@ -96,9 +96,10 @@
                                      <form action="{{route("hdelete",$town->id)}}" method="post" class="form-inline mx-1">
                                          @method('delete')
                                          @csrf
-                                         <button class="p-2 m-0  btn-sm btn btn-outline-danger">Delete</button>
+                                         <button class="p-1 m-0  btn-sm btn btn-outline-danger">Delete</button>
                                      </form>
-                                     <a href="{{route("hoteledit",$town->id)}}" class="btn btn-warning">Edit</a>
+                                    
+                                     <a href="{{route("hoteledit",$town->id)}}" class="btn btn-warning p-1">Edit</a>
 
                                  </td>
 
@@ -111,7 +112,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card" style="width: 400px;">
                         <h3 class="card-header text-center">Hotel</h3>
                         <div class="card-body">
                             <form action="{{route("hotel")}}" method="POST" enctype="multipart/form-data">

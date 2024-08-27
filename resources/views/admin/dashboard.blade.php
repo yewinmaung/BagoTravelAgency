@@ -70,7 +70,7 @@
                                     <p class="mb-1 h4 font-weight-bolder">
                                         <span class="counter-up text-col1">{{$IU}}</span>
                                     </p>
-                                    <p class="mb-0 text-col1-50">Interest Users</p>
+                                    <p class="mb-0 text-col1-50">Registed Users</p>
                                 </div>
                             </div>
                         </div>

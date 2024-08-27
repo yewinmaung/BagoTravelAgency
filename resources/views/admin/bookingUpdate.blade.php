@@ -70,7 +70,7 @@
                        <div class="block"></div>
                        <div class="col-12 w-100 h-100 d-flex justify-content-center align-items-center">
 
-                           <div class="card">
+                           <div class="card" style="width: 1000px;" >
                                <div class="card-body">
                                    <form method="post" action="{{route("book-done",$book->id)}}" class="form-group border p-3 form-bg d-md-block d-none">
                                        @method('put')

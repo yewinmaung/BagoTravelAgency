@@ -69,7 +69,7 @@
                 <div class="row">
 
                     <div class="col-12 w-100 h-100 d-flex justify-content-center align-items-center">
-                        <div class="card">
+                        <div class="card" style="width:450px">
                             <div class="card-header bg-secondary">
                                 <img src="{{asset('data/images/1x/honey_logo-3.png')}}" alt="" class="mb-3">
                                 <h3 class="text-warning">Edit Post</h3>

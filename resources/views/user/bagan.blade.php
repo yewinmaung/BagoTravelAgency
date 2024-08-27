@@ -22,35 +22,35 @@ Interesting Places
                          </div>
                          <div class="owl-carousel owl-theme">
                              <div class="item">
-                                 <img class="img-responsive" src="{{asset("data/images/shwe1.jpg")}}" alt="#" />
+                                 <img class="img-fluid" src="{{asset("data/images/shwe1.jpg")}}" alt="#" />
                                  <h3>Shwemawdaw Pagoda</h3>
                                  <p>
                                      <a href="{{route("pagodadetail",1)}}" class="">Read More</a>
                                  </p>
                              </div>
                              <div class="item">
-                                 <img class="img-responsive" src="{{asset("data/images/shwe2.jpg")}}" alt="#" />
+                                 <img class="img-fluid" src="{{asset("data/images/shwe2.jpg")}}" alt="#" />
                                  <h3>Kyaik Pun Pagoda</h3>
                                  <p>
                                      <a href="{{route("pagodadetail",2)}}" class="">Read More</a>
                                  </p>
                              </div>
                              <div class="item">
-                                 <img class="img-responsive" src="{{asset("data/images/pagodas/Shwe Thar lyaung9.jfif")}}" alt="#" />
+                                 <img class="img-fluid" src="{{asset("data/images/pagodas/Shwe Thar lyaung9.jfif")}}" alt="#" />
                                  <h3>Shwethalyaung Buddha</h3>
                                  <p>
                                      <a href="{{route("pagodadetail",3)}}" class="">Read More</a>
                                  </p>
                              </div>
                              <div class="item">
-                                 <img class="img-responsive" src="{{asset("data/images/shwe4.jpg")}}" alt="#" />
+                                 <img class="img-fluid" src="{{asset("data/images/shwe4.jpg")}}" alt="#" />
                                  <h3>Mahazedi Pagoda</h3>
                                  <p>
                                      <a href="{{route("pagodadetail",4)}}" class="">Read More</a>
                                  </p>
                              </div>
                              <div class="item">
-                                 <img class="img-responsive" src="{{asset("data/images/pagodas/Hinthar Gone4.jfif")}}" alt="#" />
+                                 <img class="img-fluid" src="{{asset("data/images/pagodas/Hinthar Gone4.jfif")}}" alt="#" />
                                  <h3>Hin Thar Gon Pagoda</h3>
                                  <p>
                                      <a href="{{route("pagodadetail",5)}}" class="">Read More</a>
@@ -118,7 +118,7 @@ Interesting Places
                              <div class="row">
                                  @foreach($restaurants as $r)
                                  <div class="col-md-4 p-0">
-                                     <div class="card" style="width: 90%; height:100%;">
+                                     <div class="card" style="width: 90%; height:85%;">
                                          <img src="{{asset("images/".$r->img)}}" class="img-fluid w-100" alt="...">
                                          <div class="card-body">
                                              <h5 class="card-title">{{$r->name}}</h5>
@@ -138,32 +138,32 @@ Interesting Places
                      <div class="col-md-12">
                          <div class="titlepage">
                              <h2>Arts and Crafts</h2>
-
+                             <span class="pt-2">Thiriohathar Market in Bago, Myanmar, is a lively market known for its variety of local products. When it comes to arts and crafts, some popular items  can buy at this market.</span>
                          </div>
                          <div class="owl-carousel owl-theme">
                              <div class="item">
                                  <img class="img-fluid w-100 h-80" src="{{asset("data/images/art/ac3 - Copy.jpg")}}" alt="#" />
-                                 <span>
+                                 <h4>
                                   Price - 25000 ks 
-                                 </span>
+                                 </h4>
                              </div>
                              <div class="item">
                                  <img class="img-fluid w-100 h-80" src="{{asset("data/images/art/ac4 - Copy.jpg")}}" alt="#" />
-                                 <span>
+                                 <h4>
                                  Price - 10000 ks 
-                                 </span>
+                                 </h4>
                              </div>
                              <div class="item">
                                  <img class="img-fluid w-100 h-80" src="{{asset("data/images/art/ac35.jpg")}}" alt="#" />
-                                 <span>
+                                 <h4>
                                  Price - 23000 ks <br>
-                                 </span>
+                                 </h4>
                              </div>
                              <div class="item">
                                  <img class="img-fluid w-100 h-80" src="{{asset("data/images/art/ac23.jpg")}}" alt="#" />
-                                 <span>
+                                 <h4>
                                   Price - 130000 ks
-                                 </span>
+                                 </h4>
                              </div>
                             </div>
                         

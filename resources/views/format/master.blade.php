@@ -44,7 +44,7 @@
                             <ul>
                                 <li><img src="{{asset("data/images/1.png")}}" alt="#"/> Burma</li>
                                 <li><img src="{{asset("data/images/2.png")}}" alt="#"/> +959 650 015 758</li>
-                                <li><img src="{{asset("data/images/3.png")}}" alt="#"/> bagotourismindustry@gmail.com</li>
+                                <li><img src="{{asset("data/images/3.png")}}" alt="#"/> honeytravellingagency6@gmail.com</li>
                             </ul>
                         </div>
                     </div>
@@ -135,13 +135,12 @@
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="Follow">
-                        <h3>ADDITIONAL LINKS</h3>
+                        <h3>QUICK LINKS</h3>
                         <ul class="link">
-                            <li> <a href="#">About us</a></li>
-                            <li> <a href="#">Terms and conditions</a></li>
-                            <li> <a href="#"> Privacy policy</a></li>
-                            <li> <a href="#">News</a></li>
-                            <li> <a href="#"> Contact us</a></li>
+                            <li> <a href="{{route("home")}}">About</a></li>
+                            <li> <a href="{{route("home")}}">Travel</a></li>
+                            <li> <a href="{{route("trip-package")}}"> Interest Places</a></li>
+                            <li> <a href="#contact"> Contact us</a></li>
                         </ul>
                     </div>
                 </div>

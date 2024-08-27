@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card" style="width: 400px;">
                         <h3 class="card-header text-center">RoomType</h3>
                         <div class="card-body">
                             <table class="table table-hover">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                   <div class="card">
+                   <div class="card" style="width: 400px;">
                         <h3 class="card-header text-center">Room Types</h3>
                         <div class="card-body">
                             <form action="{{route("room")}}" method="POST" enctype="multipart/form-data">

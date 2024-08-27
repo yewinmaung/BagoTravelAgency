@@ -65,7 +65,7 @@
     <div class="row">
 
         <div class="col-6">
-            <div class="card">
+            <div class="card" style="width: 400px;">
                 <div class="card-body">
                     <h2 class="card-title">Name: {{$message->cname}}</h2>
                     <p class="card-text text-dark">Description: {{$message->cmessage}}</p>
@@ -85,7 +85,7 @@
             @endif
             <form action="{{route("reply")}}" method="post">
                 @csrf
-                <div class="card p-2">
+                <div class="card p-2" style="width: 400px;">
                     <h2 class="card-title">{{$message->title}}</h2>
                     <div class="form-group">
                         <input type="hidden" value="{{$message->id}}" name="id">

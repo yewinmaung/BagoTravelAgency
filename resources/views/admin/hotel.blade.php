@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card mb-2">
+                    <div class="card mb-2"style="width:470px">
                         <h3 class="card-header text-center">Hotels List</h3>
                         <div class="card-body">
                             <table class="table table-hover">
@@ -105,7 +105,7 @@
 
                 </div>
                 <div class="col-md-6">
-                    <div class="card mb-2">
+                    <div class="card mb-2 m-5" style="width:400px;">
                         <h3 class="card-header text-center">Hotel</h3>
                         <div class="card-body">
                             <form action="{{route("gustInfo")}}" method="POST" enctype="multipart/form-data">

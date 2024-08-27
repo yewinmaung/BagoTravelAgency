@@ -24,7 +24,7 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">{{$pagoda->name}}</h3>
-                            <p class="card-text">{{$pagoda->history}}</p>
+                            <p class="card-text" style="text-align: justify;">{{$pagoda->history}}</p>
                         </div>
                     </div>
 

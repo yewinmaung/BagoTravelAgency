@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="card">
+                    <div class="card" style="width: 620px;">
                         <table class="table table-hover">
                             <thead class="align-items-center">
                                 <th>#</th>

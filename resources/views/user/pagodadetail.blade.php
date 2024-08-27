@@ -28,8 +28,13 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">{{$pagoda->name}}</h3>
-                            <p class="card-text">{{$pagoda->history}}</p>
+                            <p class="card-text" style="text-align: justify;">{{$pagoda->history}}</p>
+                            <p style="font-weight:bold">
+                           <a href="http://bagoshwemawdaw.com.mm/" class="">Website Link</a>
+                        </p>
                         </div>
+                        
+
                     </div>
 
                 </div>

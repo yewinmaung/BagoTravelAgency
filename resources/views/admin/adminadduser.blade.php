@@ -69,11 +69,12 @@
                 <div class="row">
 
                     <div class="col-12 w-100 h-100 d-flex justify-content-center align-items-center">
-                       <div class="card">
-                           <div class="card-header bg-secondary">
-                               <img src="{{asset('data/images/1x/honey_logo-3.png')}}" alt="" class="mb-3">
-                               <h3 class="text-warning">Booking</h3>
+                       <div class="card" style="width: 500px;">
+                           <div class="card-header bg-secondary" >
+                               <img src="{{asset('data/images/1x/bago-logo1.png')}}" alt="" class="mb-3" style="height: 50px;">
+<h2 class="text-warning m-2">Booking</h2>
                            </div>
+                          
                            <div class="card-body">
                                <form method="post" action="{{route("admin-book")}}" class="form-group border p-3 form-bg ">
 

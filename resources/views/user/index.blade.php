@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-8 col-md-8">
-                <div class="card">
+                <div class="card1">
                     <div class="card-header">Your Ticket</div>
                     <div class="card-body">
                         <table class="table">
@@ -44,17 +44,19 @@
 
                                     <td class="">
                                         @if($book->isclear=='0')
-                                            <label class="border bg-warning text-dark px-3 py-2 mx-1">UnPaid</label>
+                                            <label class="border bg-warning text-dark px-2 py-1 mx-1">UnPaid</label>
+                                            <br/>
+                                            <br/>
                                             <div class="">
                                                 <form action="{{route("book.cancel",$book->id)}}" method="post" class="form-inline my-0">
                                                     @method('delete')
                                                     @csrf
-                                                    <button class="p-2 m-0  btn-sm btn btn-outline-danger">Cancel</button>
+                                                    <button class="p-1 m-0  btn-sm btn btn-outline-danger">Cancel</button>
                                                 </form>
                                             </div>
                                         @elseif($book->isclear=='1')
                                            <div class="d-flex align-items-end">
-                                               <label class="border bg-warning text-dark px-3 py-1">Paid</label>
+                                               <label class="border bg-warning text-dark px-2 py-1">Paid</label>
                                                <small class=" text-dark px-2 py-1">Service by {{$book->admins_name}}</small>
 
                                            </div>
@@ -79,9 +81,12 @@
             </div>
             <div class="col-4 col-md-4">
                 <div class="card">
-                    <div class="card-header bg-secondary">
+                    <div class="card-header bg-secondary" style="height:150px;">
                         <img src="{{asset('data/images/1x/bago-logo1.png')}}" alt="" class="mb-3">
-                        <h3 class="text-warning">Edit Profile</h3>
+                        
+                    </div>
+                    <div>
+                    <h3 class="text-warning">Edit Profile</h3>
                     </div>
                     <div class="card-body">
                         @if (session('success'))

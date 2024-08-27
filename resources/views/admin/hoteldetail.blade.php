@@ -68,7 +68,7 @@
             <div class="row d-flex justify-content-center">
 
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card" style="width:400px;">
                         <h3 class="card-header text-center">Hotel</h3>
                         @if (session('success'))
 

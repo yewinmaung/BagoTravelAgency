@@ -51,7 +51,7 @@
                             <ul>
                                 <li><img src="{{asset("data/images/1.png")}}" alt="#"/> Burma</li>
                                 <li><img src="{{asset("data/images/2.png")}}" alt="#"/> +959 650 015 758</li>
-                                <li><img src="{{asset("data/images/3.png")}}" alt="#"/> bagotourismindustry@gmail.com</li>
+                                <li><img src="{{asset("data/images/3.png")}}" alt="#"/> honeytravellingagency6@gmail.com</li>
                             </ul>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
 
 <!-- end header -->
 <section class="container-fluid position-relative">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel" data-interval="1000">
         <!-- <ol class="carousel-indicators">
             <li data-target="#carouselExampleAutoplaying" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleAutoplaying" data-slide-to="1"></li>

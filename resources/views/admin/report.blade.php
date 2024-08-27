@@ -61,7 +61,7 @@
 @endsection
 
 @section('content')
-      <div class="card">
+      <div class="card" style="width: 800px;">
           @if (Session::has('success'))
               <div class="alert alert-success p-2">{{Session::get('success')}}</div>
           @endif

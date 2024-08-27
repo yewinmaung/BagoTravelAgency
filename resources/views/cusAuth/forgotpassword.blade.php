@@ -38,9 +38,9 @@
 
                         <div class="d-flex justify-content-center align-items-center">
 
-                       <div class="card" style="width: 27rem;">
+                       <div class="card" style="width: 20rem;">
 
-                            <img src="{{asset('data/images/1x/bago-logo1.png')}}" class="card-img-top bg-custom" alt="...">
+                            <img src="{{asset('data/images/1x/bago-logo1.png')}}" class="card-img-top bg-custom" alt="..." style="height: 100px;">
 
                             <div class="card-header">Re_Sent E-mail</div>
                             <div class="card-body">
