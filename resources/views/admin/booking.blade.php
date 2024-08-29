@@ -81,25 +81,32 @@
             <table class="table bg-white">
                 <tr>
                     <th>ID</th>
+                    <th>Payment</th>
                     <th>Name</th>
                     <th>NIC</th>
                     <th>Phone</th>
+                    <th>Transporation</th>
                     <th>Start Place</th>
                     <th>Package</th>
                     <th>Date</th>
 
-                    @if($use=='1'||$use=='2')
-                    <th>Payment</th>
+
+
+                    <th>Approve</th>
                         <th>Service By</th>
-                    @endif
+
                 </tr>
 
                 @forelse($books as $book)
                     <tr>
                         <td>{{$book->id}}</td>
+                        <td>
+                            <img src="{{asset("images/".$book->payment)}}" alt="" style="width: 50px;height: 50px">
+                        </td>
                         <td>{{$book->name}}</td>
                         <td>{{$book->nic}}</td>
                         <td>{{$book->phone}}</td>
+                        <td>{{$book->trans}}</td>
                         <td class="text-capitalize">{{$book->location}}</td>
                         <td class="text-capitalize">{{$book->package}}</td>
                         <td>{{$book->date}}</td>
@@ -107,7 +114,7 @@
 
                          <td class="d-flex">
                              @if($book->isclear=='0')
-                                 <a href="{{route('done',$book->id)}}" class="btn btn-warning d-inline-block mx-1">UnPaid</a>
+                                 <a href="{{route('done',$book->id)}}" class="btn btn-warning d-inline-block mx-1">Pending</a>
                                 <div class="">
                                     <form action="{{route("book.cancel",$book->id)}}" method="post" class="form-inline">
                                         @method('delete')
@@ -116,7 +123,7 @@
                                     </form>
                                 </div>
                                  @elseif($book->isclear=='1')
-                                 <label href="#" class="bg-warning text-dark p-2">Paid</label>
+                                 <label href="#" class="bg-warning text-dark p-2">Confirm</label>
                                  @endif
                          </td>
                             @if($book->isclear=='1')

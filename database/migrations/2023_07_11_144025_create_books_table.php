@@ -27,6 +27,8 @@ return new class extends Migration
             $table->foreignId('admins_id')->default('0');
             $table->String('admins_name')->default('user-book');
             $table->timestamps();
+            $table->string("trans",255);
+            $table->string("payment",255);
         });
     }
 

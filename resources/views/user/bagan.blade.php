@@ -74,7 +74,7 @@ Interesting Places
                                  <img class="img-fluid w-100 rounded top" src="{{asset("data/images/palace/k18.jpg")}}" alt="#" />
                                  <h3>Royal Golden Palace</h3>
                             <span>
-                            The Throne Hall, a central feature of the Royal Golden Palace, was where the king held court and conducted important state affairs. It was designed to impress and convey the king's power and authority. 
+                            The Throne Hall, a central feature of the Royal Golden Palace, was where the king held court and conducted important state affairs. It was designed to impress and convey the king's power and authority.
                             </span>
                               </div>
                              <div class="item">
@@ -99,7 +99,7 @@ Interesting Places
 
                             </span>
                                 </div>
-                                <div class="item">
+                             <div class="item">
                                  <img class="img-fluid w-100 rounded top" src="{{asset("data/images/palace/k2.jpg")}}" alt="#" />
                                  <h3>Royal Apartment of Khin Khin Gyi</h3>
                             <span>
@@ -107,9 +107,12 @@ Interesting Places
 
                             </span>
                                 </div>
+
                          </div>
-                        
+                         <
+                         <a href="{{route("palace")}}" class=" d-flex justify-content-end">Read More</a>
                      </div>
+
                  </div>
                  <div class="row mt-3">
                      <div class="col-md-12">
@@ -144,13 +147,13 @@ Interesting Places
                              <div class="item">
                                  <img class="img-fluid w-100 h-80" src="{{asset("data/images/art/ac3 - Copy.jpg")}}" alt="#" />
                                  <h4>
-                                  Price - 25000 ks 
+                                  Price - 25000 ks
                                  </h4>
                              </div>
                              <div class="item">
                                  <img class="img-fluid w-100 h-80" src="{{asset("data/images/art/ac4 - Copy.jpg")}}" alt="#" />
                                  <h4>
-                                 Price - 10000 ks 
+                                 Price - 10000 ks
                                  </h4>
                              </div>
                              <div class="item">
@@ -166,7 +169,7 @@ Interesting Places
                                  </h4>
                              </div>
                             </div>
-                        
+
                      </div>
                  </div>
              </div>

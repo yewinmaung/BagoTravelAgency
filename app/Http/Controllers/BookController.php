@@ -28,6 +28,9 @@ class BookController extends Controller
         $restaurants=Restaurant::paginate(4);
         return view("user/bagan",compact("restaurants"));
  }
+ public function palace(){
+        return view("user.palace");
+ }
     /**
      * Show the form for creating a new resource.
      */
@@ -46,6 +49,7 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
+
         if (!Auth::user()){
             return redirect()->route("login");
         }
@@ -78,6 +82,13 @@ class BookController extends Controller
         ]);
 
         $book=new Book();
+        if ($image = $request->file('payment'))
+        {
+            $destinationPath = 'images/';
+            $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $profileImage);
+            $book['payment'] = "$profileImage";
+        }
         $book->name=$request->name;
         $book->nic=$request->nic;
         $book->email=$request->email;
@@ -88,6 +99,8 @@ class BookController extends Controller
         $book->location=$request->splace;
         $book->package=$request->package;
         $book->phone=$request->phone;
+        $book->trans=$request->trans;
+        //$book->payment=$request->payment;
         $book->users_id=Auth::user()->id;
         $book->save();
         return redirect()->route('user.ticket');

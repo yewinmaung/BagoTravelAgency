@@ -97,6 +97,7 @@ Route::delete("user/booking/cancel/{id}",[\App\Http\Controllers\BookController::
 Route::get("honey/trip",[\App\Http\Controllers\BookController::class,"trip"])->name('trip-package');
 Route::post("user/review",[\App\Http\Controllers\MessageController::class,'store'])->name('message.review');
 Route::get("user/spackage",[\App\Http\Controllers\BookController::class,"edit"])->name("spackage");
+Route::get("user/palace",[\App\Http\Controllers\BookController::class,"palace"])->name("palace");
 ///////////////
 Route::get('forget-password', [\App\Http\Controllers\Auth\ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
 Route::post('forget-password', [\App\Http\Controllers\Auth\ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post');

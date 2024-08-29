@@ -76,6 +76,13 @@
                                        @method('put')
                                        @csrf
                                        <div class="row">
+                                           <div class="col-12">
+                                               <div class="form-group">
+                                                   <img src="{{asset("images/".$book->payment)}}" alt="" class="">
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="row">
                                            <div class="col-6">
                                                <div class="form-group">
 
@@ -85,7 +92,6 @@
                                                    @enderror
                                                </div>
                                            </div>
-
                                            <div class="col-6">
                                                <div class="form-group">
                                                    <input type="text" value="{{$book->nic}}" name="nic" class="text-dark form-control @error("nic") is-invalid @enderror" placeholder="NIC">
@@ -94,7 +100,6 @@
                                                    @enderror
                                                </div>
                                            </div>
-
                                            <div class="col-6">
                                                <div class="form-group">
                                                    <input type="text" value="{{$book->nop}}" name="nop" class="text-dark form-control @error("nop") is-invalid @enderror" placeholder="Number of People">
@@ -140,7 +145,6 @@
                                                <div class="text-danger invalid-feedback">{{$message}}</div>
                                                @enderror
                                            </div>
-
                                            <div class="col-3">
                                                <div class="form-group">
                                                    <input type="date" value="{{$book->date}}" id="v_name" name="date" class="custom-select  @error("date") is-invalid @enderror">
@@ -151,8 +155,8 @@
                                            </div>
                                            <div class="col-3">
                                                <select class="custom-select @error("paym") is-invalid @enderror" name="paym" >
-                                                   <option class="cus-select"  value="0">UnPaid</option>
-                                                   <option class="cus-select" value="1">Paid</option>
+                                                   <option class="cus-select"  value="0">Pending</option>
+                                                   <option class="cus-select" value="1">Confirm</option>
                                                </select>
                                            </div>
                                        </div>

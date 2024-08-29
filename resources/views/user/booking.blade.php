@@ -23,7 +23,7 @@ Booking
                     <div class="col-12 w-100 h-100 d-flex justify-content-center align-items-center">
 
                         <div class="w-50">
-                            <form method="post" action="{{route("user.store")}}" class="form-group border p-3 form-bg d-md-block d-none">
+                            <form method="post" action="{{route("user.store")}}" enctype="multipart/form-data" class="form-group border p-3 form-bg d-md-block d-none">
                                 <h3 style="color:gold;background-color: #6b4701;" class="text-center d-flex justify-content-center mb-3 p-2 custom-adv">Start Your Trip With Us</h3>
 
                                 @csrf
@@ -90,6 +90,29 @@ Booking
                                         <div class="form-group">
                                             <input type="text" value="{{old('phone')}}" name="phone" class="custom-select @error("phone") is-invalid @enderror" placeholder="Phone">
                                             @error("phone")
+                                            <p class="text-danger invalid-feedback">{{$message}}</p>
+                                            @enderror
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 pb-2">
+                                        <label for="" class="text-black-50">Transporation</label>
+                                        <select class="custom-select @error("trans") is-invalid @enderror" name="trans" >
+                                           <option class="cus-select" value="car">Car</option>
+                                            <option class="cus-select" value="bus">Bus</option>
+                                            <option class="cus-select" value="privatecar">Private Car</option>
+
+                                        </select>
+
+                                        @error("trans")
+                                        <div class="text-danger invalid-feedback">{{$message}}</div>
+                                        @enderror
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="" class="text-black-50">Payment</label>
+                                            <input type="file" value="{{old('payment')}}" name="payment" class=" @error("payment") is-invalid @enderror" placeholder="Payment">
+                                            @error("payment")
                                             <p class="text-danger invalid-feedback">{{$message}}</p>
                                             @enderror
                                         </div>
